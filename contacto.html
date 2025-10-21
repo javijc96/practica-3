@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="practica3.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="barra-superior">
+            <div class="logo">
+                <img src="./imagenes/logo1.png" alt="">
+            </div>
+            <div class="icono">👤 <span>Cuenta</span></div>
+            <div class="busqueda">
+                <label for="buscar">Búsqueda</label>
+                <input id="buscar" type="text" placeholder="Buscar...">
+            </div>
+            <div class="enlaces">
+                <span>Tracking</span>
+                <div class="icono">🛒 <span>Cesta</span></div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Gourmet</a></li>
+                <li><a href="categoria.html">Whiskey</a></li>
+                <li><a href="#">Ron</a></li>
+                <li><a href="#">Cognac, Brandy</a></li>
+                <li><a href="#">Tequila, Mezcal</a></li>
+                <li><a href="#">Vodka</a></li>
+                <li><a href="#">Vino</a></li>
+                <li><a href="#">Absenta</a></li>
+                <li><a href="#">Cerveza</a></li>
+                <li><a href="#">Catálogo completo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo">Contacto</h1>
+        <p style="font-size:13px;opacity:.85;margin-bottom:10px">
+            Rellena el formulario.
+        </p>
+
+        <section class="fila-contacto">
+            <form class="formulario">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" type="text" placeholder="Tu nombre y apellidos" required>
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="tucorreo@gmail.com" required>
+
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" placeholder="Tu teléfono">
+
+                <label for="mensaje">Comentarios</label>
+                <textarea id="mensaje" placeholder="Escribe tu consulta" required></textarea>
+
+                <div class="recaptcha">reCAPTCHA</div>
+
+                <button class="boton" type="submit">Enviar</button>
+            </form>
+
+            <div class="mapa">
+                <div class="caja-mapa">
+                    <iframe
+                        src="https://www.google.com/maps?q=Calle%20Zafiro%2010%2C%2014010%20C%C3%B3rdoba&output=embed"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenido">
+            <div class="info-tienda">
+                <p>Calle Zafiro 10, 14010</p>
+                <p>Córdoba - España</p>
+            </div>
+            <div class="redes">
+                <div class="red">f</div>
+                <div class="red">ig</div>
+                <div class="red">▶</div>
+            </div>
+            <div class="info-tienda"><a>Tipos de pago</a>
+                <p>VISA</p>
+                <p>Mastercard</p>
+                <p>PayPal</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

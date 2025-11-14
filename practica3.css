@@ -392,7 +392,6 @@ main {
     font-size: 12px;
 }
 
-
 .mapa {
     width: 100%;
     max-width: 700px;
@@ -455,7 +454,6 @@ main {
 }
 /* =========================
    PÁGINA DE PRODUCTO
-   Adaptada al estilo general
    ========================= */
 
 .product-page {
@@ -473,6 +471,7 @@ main {
 
 /* Columna izquierda: imagen / galería */
 .product-main-image {
+    max-width: 550px;
     background: linear-gradient(180deg, #f1f5f9, #e9eef6);
     border-radius: 12px;
     border: 1px solid var(--borde);

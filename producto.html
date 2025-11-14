@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practica3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="barra-superior">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./imagenes/logo2.png" alt="">
+
+                </a>
+            </div>
+            <div class="icono">👤 <span>Cuenta</span></div>
+            <div class="busqueda">
+                <label for="buscar">Búsqueda</label>
+                <input id="buscar" type="text" placeholder="Buscar...">
+            </div>
+            <div class="enlaces">
+                <span>Tracking</span>
+                <div class="icono">🛒 <span>Cesta</span></div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Gourmet</a></li>
+                <li><a href="#">Whiskey</a></li>
+                <li><a href="#">Ron</a></li>
+                <li><a href="#">Cognac, Brandy</a></li>
+                <li><a href="#">Tequila, Mezcal</a></li>
+                <li><a href="#">Vodka</a></li>
+                <li><a href="#">Vino</a></li>
+                <li><a href="#">Absenta</a></li>
+                <li><a href="#">Cerveza</a></li>
+                <li><a href="#">Catálogo completo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-page">
+            <div class="product-layout">
+                <!-- Columna izquierda: imagen -->
+                <div class="product-media">
+                    <div class="product-main-image">
+                        <!-- Aquí iría la foto de la botella -->
+                        <img src="img/glenmore-12.jpg" alt="Botella de Whisky Escocés Glenmore 12 Años">
+                    </div>
+                    <div class="product-thumbs">
+                        <img src="img/glenmore-12-detalle1.jpg" alt="Detalle etiqueta Glenmore 12">
+                        <img src="img/glenmore-12-detalle2.jpg" alt="Detalle botella Glenmore 12">
+                        <img src="img/glenmore-12-detalle3.jpg" alt="Caja Glenmore 12">
+                    </div>
+                </div>
+
+                <!-- Columna derecha: info -->
+                <div class="product-info">
+                    <p class="product-badge">Whisky Escocés · 12 años</p>
+                    <h1 class="product-title">Whisky Escocés Glenmore 12 Años</h1>
+
+                    <div class="product-rating">
+                        ⭐⭐ ⭐ ⭐ ⭐
+                        <span>4,7 / 5</span>
+                        <span class="rating-count">(128 opiniones)</span>
+                    </div>
+
+                    <div class="product-price-block">
+                        <span class="product-price">32,90 €</span>
+                        <span class="product-old-price">38,90 €</span>
+                        <span class="product-tag">Envío 24/48h</span>
+                    </div>
+
+                    <p class="product-short-desc">
+                        Destilado en las tierras altas de Escocia, Glenmore 12 Años se madura en barricas de roble que
+                        previamente contuvieron jerez, dando como resultado un whisky equilibrado, suave y aromático.
+                        Ideal para disfrutar solo, con hielo o con un toque de agua.
+                    </p>
+
+                    <ul class="product-highlights">
+                        <li>Notas de sabor: miel, vainilla y frutos secos.</li>
+                        <li>Maduración: 12 años en barricas de roble.</li>
+                        <li>Perfecto para ocasiones especiales o regalo.</li>
+                    </ul>
+
+                    <div class="product-buy">
+                        <div class="product-qty">
+                            <label for="qty">Cantidad</label>
+                            <input id="qty" type="number" value="1" min="1">
+                        </div>
+                        <button class="btn-primary">Añadir al carrito</button>
+                        <button class="btn-ghost">Añadir a favoritos</button>
+                    </div>
+
+                    <div class="product-meta">
+                        <p><strong>Volumen:</strong> 700 ml</p>
+                        <p><strong>Graduación alcohólica:</strong> 40% vol.</p>
+                        <p><strong>Origen:</strong> Highlands, Escocia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descripción detallada -->
+            <section class="product-description">
+                <h2>Descripción</h2>
+                <p>
+                    Glenmore 12 Años es un whisky de malta escocés elaborado con una cuidada selección de cebadas y agua
+                    pura de manantial. Su doble destilación y lenta maduración en barricas de roble ex-jerez aportan
+                    un perfil aromático complejo pero accesible: notas dulces de miel y vainilla, matices de frutos
+                    secos
+                    y un final ligeramente especiado.
+                </p>
+                <p>
+                    Su cuerpo medio y su suavidad en boca lo convierten en una excelente opción tanto para quienes se
+                    inician
+                    en el mundo del whisky como para aficionados que buscan un escocés equilibrado para el día a día.
+                </p>
+            </section>
+
+            <!-- Ficha técnica -->
+            <section class="product-specs">
+                <h2>Ficha técnica</h2>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Tipo</span>
+                        <span class="spec-value">Whisky de malta</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">País / Región</span>
+                        <span class="spec-value">Escocia · Highlands</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Graduación</span>
+                        <span class="spec-value">40% vol.</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Contenido</span>
+                        <span class="spec-value">700 ml</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Envejecimiento</span>
+                        <span class="spec-value">12 años</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Alérgenos</span>
+                        <span class="spec-value">Contiene cebada (gluten)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Productos relacionados -->
+            <section class="product-related">
+                <h2>También te puede interesar</h2>
+                <div class="related-grid">
+                    <!-- Aquí pondrías otras tarjetas de producto -->
+                    <article class="related-card">Otro whisky 1</article>
+                    <article class="related-card">Otro whisky 2</article>
+                    <article class="related-card">Otro whisky 3</article>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="contenido">
+            <div class="info-tienda">
+                <p>Calle Zafiro 10, 14010</p>
+                <p>Córdoba - España</p>
+            </div>
+            <div class="redes">
+                <div class="red">f</div>
+                <div class="red">ig</div>
+                <div class="red">▶</div>
+            </div>
+            <div class="info-tienda"><a>Tipos de pago</a>
+                <p>VISA</p>
+                <p>Mastercard</p>
+                <p>PayPal</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

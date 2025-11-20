@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda - Inicio</title>
-    <link rel="icon" type="image/x-icon" href="/imagenes/logoreal.ico">
+  <link rel="icon" type="image/x-icon" href="/imagenes/logoreal.ico">
   <link rel="stylesheet" href="practica3.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
   <header class="encabezado">
     <div class="barra-superior">
       <div class="logo">
         <a href="./index.html">
-          <img src="./imagenes/logo2.png" alt="">
-
+          <img src="./imagenes/logo2.png" alt="Logo Elixir Club">
         </a>
       </div>
+
       <div class="icono">👤 <span>Cuenta</span></div>
+
       <div class="busqueda">
         <label for="buscar">Búsqueda</label>
         <input id="buscar" type="text" placeholder="Buscar...">
       </div>
+
       <div class="enlaces">
         <span>Tracking</span>
         <div class="icono">🛒 <span>Cesta</span></div>
         <div><a href="contacto.html">Contacto</a></div>
       </div>
     </div>
+
     <nav class="menu">
       <ul>
         <li><a href="#">Gourmet</a></li>
@@ -55,54 +55,77 @@
 
     <h2 class="titulo">Novedades</h2>
 
-    <section class="productos">
-      <article class="tarjeta">
-        <span class="etiqueta">Nuevo</span>
-        <div class="imagen">
-          <img src="./imagenes/macallan15.webp" class="imagen" alt="">
-        </div>
-        <div class="info">
-          <p class="nombre">Macallan 15 Double Cask</p>
-          <p class="precio">100€</p>
-          <div class="controles"><button class="boton">Agregar a cesta</button></div>
-        </div>
-      </article>
+    <section class="novedades">
+      <div class="slider">
+        <div class="slider__ventana">
+          <div class="slider__pista">
+            <!-- PÁGINA 1: productos 1, 2, 3 -->
+            <div class="slider__pagina">
+              <!-- SLIDE 1 -->
+              <article class="slide">
+                <img src="./imagenes/macallan15.webp" alt="Botella Macallan 15 Double Cask">
+                <div class="slide__texto">
+                  <h3>Macallan 15 Double Cask</h3>
+                  <p>Whisky escocés envejecido en barricas de roble americano y europeo. Perfecto para ocasiones especiales.</p>
+                  <p class="slide__precio">100€</p>
+                </div>
+              </article>
 
-      <article class="tarjeta">
-        <span class="etiqueta">Nuevo</span>
-        <div class="imagen">
-          <img src="./imagenes/bacardi1.jpg" alt="bacardi">
-        </div>
-        <div class="info">
-          <p class="nombre">Bacardí Passionfruit</p>
-          <p class="precio">13,25€</p>
-          <div class="controles"><button class="boton">Agregar a cesta</button></div>
-        </div>
-      </article>
+              <!-- SLIDE 2 -->
+              <article class="slide">
+                <img src="./imagenes/bacardi1.jpg" alt="Botella Bacardí Passionfruit">
+                <div class="slide__texto">
+                  <h3>Bacardí Passionfruit</h3>
+                  <p>Ron ligero con un toque de maracuyá, ideal para cócteles refrescantes.</p>
+                  <p class="slide__precio">13,25€</p>
+                </div>
+              </article>
 
-      <article class="tarjeta">
-        <span class="etiqueta">Nuevo</span>
-        <div class="imagen">
-          <img src="./imagenes/orangebitter1.webp" alt="">
-        </div>
-        <div class="info">
-          <p class="nombre">De Oranjebitter</p>
-          <p class="precio">7,97€</p>
-          <div class="controles"><button class="boton">Agregar a cesta</button></div>
-        </div>
-      </article>
+              <!-- SLIDE 3 -->
+              <article class="slide">
+                <img src="./imagenes/orangebitter1.webp" alt="Botella De Oranjebitter">
+                <div class="slide__texto">
+                  <h3>De Oranjebitter</h3>
+                  <p>Licor tradicional con notas cítricas y amargas. Perfecto como aperitivo.</p>
+                  <p class="slide__precio">7,97€</p>
+                </div>
+              </article>
+            </div>
+            <div class="slider__pagina">
+              <!-- SLIDE 4 -->
+              <article class="slide">
+                <img src="./imagenes/cohete1.jpg" alt="Debowa Military cohete">
+                <div class="slide__texto">
+                  <h3>Debowa Military (cohete)</h3>
+                  <p>Vodka polaco en botella con forma de cohete, ideal para regalo.</p>
+                  <p class="slide__precio">65,99€</p>
+                </div>
+              </article>
 
-      <article class="tarjeta">
-        <span class="etiqueta">Nuevo</span>
-        <div class="imagen">
-          <img src="./imagenes/cohete1.jpg" alt="">
+              <!-- SLIDE 5 -->
+              <article class="slide">
+                <img src="./imagenes/gin-premium-roku.jpg" alt="Ginebra Premium">
+                <div class="slide__texto">
+                  <h3>Ginebra Premium</h3>
+                  <p>Botánicos seleccionados para un gin tonic aromático y equilibrado.</p>
+                  <p class="slide__precio">25,99€</p>
+                </div>
+              </article>
+
+              <!-- SLIDE 6 -->
+              <article class="slide">
+                <img src="./imagenes/ron_clement.jpg" alt="Ron añejo selección">
+                <div class="slide__texto">
+                  <h3>Ron añejo selección</h3>
+                  <p>Notas de vainilla, caramelo y madera, ideal para tomar solo o con hielo.</p>
+                  <p class="slide__precio">35,99€</p>
+                </div>
+              </article>
+            </div>
+
+          </div>
         </div>
-        <div class="info">
-          <p class="nombre">Debowa Military (cohete)</p>
-          <p class="precio">65,99€</p>
-          <div class="controles"><button class="boton">Agregar a cesta</button></div>
-        </div>
-      </article>
+      </div>
     </section>
   </main>
 
@@ -113,25 +136,28 @@
         <p>Córdoba - España</p>
         <p>Horario: L-V 9:00–18:00</p>
       </div>
+
       <div class="redes">
         <div class="red">F</div>
         <div class="red">IG</div>
         <div class="red">X</div>
       </div>
+
       <div class="info-tienda">
         <p><a href="#">Tipos de pago</a></p>
         <p>Visa · Mastercard · PayPal</p>
       </div>
+
       <div>
-        <a href="https://practica-3-omega.vercel.app/">Elixir Club</a> by <a href="https://github.com/javijc96">Javier
-          Juarez</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img
-          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
-          style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-          src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt=""
-          style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        <a href="https://practica-3-omega.vercel.app/">Elixir Club</a>
+        by
+        <a href="https://github.com/javijc96">Javier Juarez</a>
+        is marked
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
       </div>
     </div>
   </footer>
 </body>
-
 </html>

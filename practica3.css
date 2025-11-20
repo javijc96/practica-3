@@ -289,76 +289,93 @@ main {
 
 /* CONTENEDOR GENERAL */
 .slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Ventana visible (solo se ven 3 productos) */
 .slider__ventana {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Pista que se mueve izquierda/derecha */
 .slider__pista {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  /* ANIMACIÓN AUTOMÁTICA */
-  animation: moverSlider 14s infinite alternate ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* ANIMACIÓN AUTOMÁTICA */
+    animation: moverSlider 14s infinite alternate ease-in-out;
 }
 
 /* Cada página contiene 3 productos */
 .slider__pagina {
-  display: flex;
-  min-width: 100%;          /* Cada página ocupa todo el ancho del slider */
-  justify-content: space-between;
+    display: flex;
+    min-width: 100%;
+    /* Cada página ocupa todo el ancho del slider */
+    justify-content: space-between;
 }
 
 /* Cada producto ocupa 1/3 de la página */
 /* Cada slide: ancho fijo del 33% y alto fijo */
 .slide {
-  width: 33.3333%;
-  height: 420px;           /* Ajusta este valor al tamaño que quieras */
-  padding: 10px;
-  box-sizing: border-box;
+    width: 33.3333%;
+    height: 420px;
+    /* Ajusta este valor al tamaño que quieras */
+    padding: 10px;
+    box-sizing: border-box;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contenedor de imagen */
 .slide img {
-  width: 100%;
-  height: 60%;             /* 60% del alto del slide (puedes cambiarlo) */
-  object-fit: cover;       /* Ajusta la imagen sin deformarla */
-  border-radius: 12px;
+    width: 100%;
+    height: 60%;
+    /* 60% del alto del slide (puedes cambiarlo) */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+    border-radius: 12px;
+      transition: transform 0.4s ease;   /* ANIMACIÓN */
+
+}
+.slide:hover img {
+  transform: scale(1.05);            /* EFECTO ZOOM */
 }
 
 /* Texto bajo la imagen */
 .slide__texto {
-  flex: 1;                 /* Ocupa el espacio restante */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 8px;
+    flex: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8px;
 }
 
 .slide__precio {
-  margin-top: auto;        /* Baja el precio al fondo */
-  font-weight: bold;
-  color: #c0392b;
+    margin-top: auto;
+    /* Baja el precio al fondo */
+    font-weight: bold;
+    color: #c0392b;
 }
 
 /* --------- ANIMACIÓN --------- */
 /* Va de 0 a -100% y luego al revés gracias a 'alternate' */
 @keyframes moverSlider {
-  0%, 10% {
-    transform: translateX(0);        /* Página 1 a la vista */
-  }
-  90%, 100% {
-    transform: translateX(-100%);    /* Página 2 a la vista */
-  }
+
+    0%,
+    10% {
+        transform: translateX(0);
+        /* Página 1 a la vista */
+    }
+
+    90%,
+    100% {
+        transform: translateX(-100%);
+        /* Página 2 a la vista */
+    }
 }
 
 /* */

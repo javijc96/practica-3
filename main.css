@@ -156,6 +156,38 @@ main {
     background: #1a2142;
     color: #fff
 }
+/* cambios para header letra blanca*/
+.navbar-encabezado a,
+.navbar-encabezado .nav-link,
+.navbar-encabezado .nav-link span,
+.navbar-encabezado .menu a,
+.encabezado a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Hover con tu color de acento */
+.navbar-encabezado .nav-link:hover,
+.navbar-encabezado a:hover,
+.navbar-encabezado .menu a:hover {
+    color: var(--acento) !important;
+    text-decoration: none !important;
+}
+
+/* Asegura que no haya azul heredado de Bootstrap */
+.navbar-encabezado .nav-link:visited,
+.navbar-encabezado .nav-link:active,
+.navbar-encabezado .nav-link:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Opcional: iconos también blancos */
+.navbar-encabezado .icono {
+    color: #ffffff !important;
+}
+/* fin cambios header*/
+
 /* footer post bootstrap*/
 .pie .info-tienda {
     font-size: 13px;

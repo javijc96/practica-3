@@ -126,7 +126,9 @@ main {
     align-items: center;
     gap: 6px
 }
-
+.navbar-encabezado .nav-link span {
+    color: #ffffff !important;
+}
 .menu {
     background: #0f142a;
     color: #cfd8ea;
@@ -154,7 +156,36 @@ main {
     background: #1a2142;
     color: #fff
 }
+/* footer post bootstrap*/
+.pie .info-tienda {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: .95;
+}
 
+.pie .redes {
+    display: flex;
+    gap: 10px;
+}
+
+.pie .red {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #151c35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dbe2fb;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pie .red:hover {
+    background: var(--acento);
+    color: white;
+}
+/*fin de footer bootstrap*/
 .contenedor {
     max-width: 1200px;
     margin: 18px auto;
@@ -304,7 +335,6 @@ main {
 .slider__pista {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    /* ANIMACIÓN AUTOMÁTICA */
     animation: moverSlider 14s infinite alternate ease-in-out;
 }
 
@@ -312,7 +342,6 @@ main {
 .slider__pagina {
     display: flex;
     min-width: 100%;
-    /* Cada página ocupa todo el ancho del slider */
     justify-content: space-between;
 }
 
@@ -332,9 +361,8 @@ main {
     width: 100%;
     height: 60%;
     object-fit: cover;
-    /* Ajusta la imagen sin deformarla */
     border-radius: 12px;
-      transition: transform 0.4s ease;   /* ANIMACIÓN */
+      transition: transform 0.4s ease; 
 
 }
 .slide:hover img {
@@ -344,7 +372,6 @@ main {
 /* Texto bajo la imagen */
 .slide__texto {
     flex: 1;
-    /* Ocupa el espacio restante */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/logoreal.ico">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-encabezado">
+            <div class="container barra-superior">
+                <a class="navbar-brand d-flex align-items-center logo" href="index.html">
+                    <img src="./imagenes/logo2.png" alt="Logo Elixir Club">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraSuperior"
+                    aria-controls="barraSuperior" aria-expanded="false" aria-label="Menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barraSuperior">
+                    <div class="busqueda mx-lg-3 my-3 my-lg-0 flex-grow-1">
+                        <label for="buscar">Búsqueda</label>
+                        <input id="buscar" type="text" placeholder="Buscar...">
+                    </div>
+                    <ul class="navbar-nav ms-lg-3 mb-2 mb-lg-0 align-items-lg-center enlaces">
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link icono" href="login.html">
+                                <span>👤</span>
+                                <span>Cuenta</span>
+                            </a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="#">
+                                <span>Tracking</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icono" href="#">
+                                <span>🛒</span>
+                                <span>Cesta</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Gourmet</a></li>
+                <li><a href="#">Whiskey</a></li>
+                <li><a href="#">Ron</a></li>
+                <li><a href="#">Cognac, Brandy</a></li>
+                <li><a href="#">Tequila, Mezcal</a></li>
+                <li><a href="#">Vodka</a></li>
+                <li><a href="#">Vino</a></li>
+                <li><a href="#">Absenta</a></li>
+                <li><a href="#">Cerveza</a></li>
+                <li><a href="#">Catálogo completo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <h1 class="h3 mb-4 text-center">Iniciar sesión</h1>
+                <form id="formularioLogin" class="card p-4 shadow-sm">
+                    <div class="mb-3">
+                        <label for="correoLogin" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correoLogin" name="correoLogin" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contrasenaLogin" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasenaLogin" name="contrasenaLogin"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        Entrar
+                    </button>
+                    <p class="mt-3 mb-0 text-center small">
+                        ¿No tienes cuenta?
+                        <a href="registro.html">Crear cuenta</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <div class="container py-4">
+            <div class="row align-items-start gy-4">
+                <!-- Dirección -->
+                <div class="col-md-4">
+                    <div class="info-tienda">
+                        <p>Calle Zafiro 10, 14010</p>
+                        <p>Córdoba - España</p>
+                    </div>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-md-4 d-flex justify-content-md-center">
+                    <div class="redes">
+                        <div class="red">f</div>
+                        <div class="red">ig</div>
+                        <div class="red">▶</div>
+                    </div>
+                </div>
+                <!-- Métodos de pago -->
+                <div class="col-md-4">
+                    <div class="info-tienda">
+                        <p class="fw-bold mb-1">Tipos de pago</p>
+                        <p class="mb-0">VISA</p>
+                        <p class="mb-0">Mastercard</p>
+                        <p class="mb-0">PayPal</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="modalLoginCorrecto" tabindex="-1" aria-labelledby="modalLoginCorrectoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLoginCorrectoLabel">Has iniciado sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Bienvenido de nuevo a Elixir Club.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="index.html" class="btn btn-primary">Ir a la página principal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const formularioLogin = document.getElementById('formularioLogin');
+
+        if (formularioLogin) {
+            formularioLogin.addEventListener('submit', function (evento) {
+                evento.preventDefault();
+
+                const correoLogin = document.getElementById('correoLogin').value;
+                const contrasenaLogin = document.getElementById('contrasenaLogin').value;
+
+
+                const modalLogin = new bootstrap.Modal(document.getElementById('modalLoginCorrecto'));
+                modalLogin.show();
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pago - Elixir Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/imagenes/logoreal.ico">
+
+    <!-- Bootstrap CSS -->
+
+    <!-- Tu CSS compilado desde SASS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER (igual estilo que en el resto de páginas) -->
+    <header class="encabezado">
+        <div class="barra-superior">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./imagenes/logo2.png" alt="Logo Elixir Club">
+                </a>
+            </div>
+
+            <!-- Cuenta -> login -->
+            <a class="icono" href="login.html">
+                👤 <span>Cuenta</span>
+            </a>
+
+            <div class="busqueda">
+                <label for="buscar">Búsqueda</label>
+                <input id="buscar" type="text" placeholder="Buscar...">
+            </div>
+
+            <div class="enlaces">
+                <span>Tracking</span>
+                <div class="icono">🛒 <span><a href="./pago.html">Cesta</a></span></div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Gourmet</a></li>
+                <li><a href="categoria.html">Whiskey</a></li>
+                <li><a href="#">Ron</a></li>
+                <li><a href="#">Cognac, Brandy</a></li>
+                <li><a href="#">Tequila, Mezcal</a></li>
+                <li><a href="#">Vodka</a></li>
+                <li><a href="#">Vino</a></li>
+                <li><a href="#">Absenta</a></li>
+                <li><a href="#">Cerveza</a></li>
+                <li><a href="#">Catálogo completo</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PÁGINA PAGO -->
+    <main class="contenedor container py-4">
+        <h1 class="titulo mb-3">Finalizar compra</h1>
+        <p style="font-size:13px;opacity:.85;margin-bottom:20px">
+            Revisa tus datos y completa el pago para finalizar tu pedido en Elixir Club.
+        </p>
+
+        <div class="row g-4">
+            <!-- Columna izquierda: datos de facturación y envío -->
+            <div class="col-12 col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Datos de facturación y envío</h2>
+
+                        <form id="formularioPago" class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="nombreCompleto" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombreCompleto" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="correoPago" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correoPago" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="direccion" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="direccion"
+                                    placeholder="Calle, número, piso..." required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="codigoPostal" class="form-label">Código postal</label>
+                                <input type="text" class="form-control" id="codigoPostal" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="pais" class="form-label">País</label>
+                                <select id="pais" class="form-select" required>
+                                    <option value="" selected disabled>Selecciona...</option>
+                                    <option value="ES">España</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="FR">Francia</option>
+                                    <option value="DE">Alemania</option>
+                                </select>
+                            </div>
+
+                            <hr class="mt-4">
+
+                            <h2 class="h5 mt-2 mb-2">Método de pago</h2>
+
+                            <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaCredito"
+                                        value="tarjeta" checked>
+                                    <label class="form-check-label" for="tarjetaCredito">Tarjeta de
+                                        crédito/débito</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="metodoPago" id="paypal"
+                                        value="paypal">
+                                    <label class="form-check-label" for="paypal">PayPal</label>
+                                </div>
+                            </div>
+
+                            <!-- Datos de tarjeta -->
+                            <div class="col-12">
+                                <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
+                                <input type="text" class="form-control" id="numeroTarjeta"
+                                    placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="caducidad" class="form-label">Caducidad</label>
+                                <input type="text" class="form-control" id="caducidad" placeholder="MM/AA" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="password" class="form-control" id="cvv" placeholder="***" required>
+                            </div>
+
+                            <div class="col-12 mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="aceptarTerminos" required>
+                                    <label class="form-check-label" for="aceptarTerminos">
+                                        Acepto los términos y condiciones de compra.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Pagar y finalizar pedido
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: resumen del pedido -->
+            <div class="col-12 col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 mb-3">Resumen del pedido</h2>
+
+                        <div class="d-flex justify-content-between small mb-2">
+                            <span>Macallan 15 Double Cask</span>
+                            <span>100,00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-between small mb-2">
+                            <span>Bacardí Passionfruit</span>
+                            <span>13,25 €</span>
+                        </div>
+                        <div class="d-flex justify-content-between small mb-2">
+                            <span>De Oranjebitter</span>
+                            <span>7,97 €</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-between small mb-2">
+                            <span>Subtotal</span>
+                            <span>121,22 €</span>
+                        </div>
+                        <div class="d-flex justify-content-between small mb-2">
+                            <span>Envío</span>
+                            <span>4,99 €</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between fw-bold mt-2">
+                            <span>Total</span>
+                            <span>126,21 €</span>
+                        </div>
+
+                        <p class="small text-muted mt-3 mb-0">
+                            Los precios incluyen impuestos aplicables. El envío estándar tarda de 2 a 5 días laborables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (tu diseño original) -->
+    <footer class="pie">
+        <div class="contenido">
+            <div class="info-tienda">
+                <p>Calle Zafiro 10, 14010</p>
+                <p>Córdoba - España</p>
+            </div>
+            <div class="redes">
+                <div class="red">f</div>
+                <div class="red">ig</div>
+                <div class="red">▶</div>
+            </div>
+            <div class="info-tienda">
+                <a>Tipos de pago</a>
+                <p>VISA</p>
+                <p>Mastercard</p>
+                <p>PayPal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CONFIRMACIÓN DE PAGO -->
+    <div class="modal fade" id="modalPagoCorrecto" tabindex="-1" aria-labelledby="modalPagoCorrectoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalPagoCorrectoLabel">Pago completado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por tu compra!<br>
+                    Te hemos enviado un correo con el resumen de tu pedido.
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" class="btn btn-secondary" data-bs-dismiss="modal">Volver a inicio</a>
+                    <a href="tracking.html" class="btn btn-primary">Ver estado del pedido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const formularioPago = document.getElementById('formularioPago');
+
+        if (formularioPago) {
+            formularioPago.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita envío real (no tienes backend en la práctica)
+
+                const modal = new bootstrap.Modal(document.getElementById('modalPagoCorrecto'));
+                modal.show();
+            });
+        }
+    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

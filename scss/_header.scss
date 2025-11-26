@@ -23,12 +23,12 @@
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-}
 
-.logo img {
-    height: 120px;
-    width: auto;
-    display: block;
+    img {
+        height: 120px;
+        width: auto;
+        display: block;
+    }
 }
 
 .busqueda {
@@ -36,26 +36,26 @@
     display: flex;
     align-items: center;
     gap: 8px;
-}
 
-.busqueda label {
-    font-size: 12px;
-    opacity: .9;
-}
+    label {
+        font-size: 12px;
+        opacity: .9;
+    }
 
-.busqueda input {
-    flex: 1;
-    height: 34px;
-    border: 1px solid #2a3351;
-    border-radius: 6px;
-    padding: 0 10px;
-    background: white;
-    color: var(--texto);
-}
+    input {
+        flex: 1;
+        height: 34px;
+        border: 1px solid #2a3351;
+        border-radius: 6px;
+        padding: 0 10px;
+        background: white;
+        color: var(--texto);
 
-.busqueda input:focus {
-    outline: 2px solid var(--acento);
-    border-color: var(--acento);
+        &:focus {
+            outline: 2px solid var(--acento);
+            border-color: var(--acento);
+        }
+    }
 }
 
 .enlaces {
@@ -76,26 +76,44 @@
     background: #0f142a;
     color: #cfd8ea;
     border-top: 1px solid #0b1020;
+
+    ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 8px 16px;
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+    }
+
+    a {
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: .95;
+        padding: 6px 8px;
+        border-radius: 20px;
+
+        &:hover {
+            background: #1a2142;
+            color: #fff;
+        }
+    }
 }
 
-.menu ul {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 8px 16px;
-    display: flex;
-    gap: 14px;
-    overflow-x: auto;
+
+.encabezado,
+.encabezado a,
+.encabezado .nav-link,
+.encabezado .nav-link span,
+.encabezado .icono span,
+.encabezado .icono,
+.encabezado .menu a {
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
-.menu a {
-    font-size: 12px;
-    white-space: nowrap;
-    opacity: .95;
-    padding: 6px 8px;
-    border-radius: 20px;
-}
-
-.menu a:hover {
-    background: #1a2142;
-    color: #fff;
+.encabezado a:hover,
+.encabezado .nav-link:hover,
+.encabezado .menu a:hover {
+    color: var(--acento) !important;
 }

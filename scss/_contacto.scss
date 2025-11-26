@@ -1,0 +1,80 @@
+.fila-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.formulario {
+    background: white;
+    width: 700px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    display: grid;
+    gap: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .08);
+}
+
+.formulario label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fafafa;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid var(--acento);
+    border-color: var(--acento);
+}
+
+.formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.recaptcha {
+    background: #f3f5f9;
+    border: 1px dashed #cbd5e1;
+    height: 84px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667085;
+    font-size: 12px;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .05);
+}
+
+.caja-mapa {
+    background: #e9eef6;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.caja-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}

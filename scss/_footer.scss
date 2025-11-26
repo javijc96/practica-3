@@ -1,0 +1,37 @@
+.pie {
+    background: var(--oscuro);
+    color: #dbe2fb;
+    border-top: 1px solid #0d1327;
+}
+
+.pie .contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.info-tienda {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: .95;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.red {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #151c35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

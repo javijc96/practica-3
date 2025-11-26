@@ -1,0 +1,24 @@
+:root {
+    --fondo: #f5f6f8;
+    --texto: #0f172a;
+    --claro: #ffffff;
+    --borde: #e5e7eb;
+    --gris: #cbd5e1;
+    --oscuro: black;
+    --oscuro-2: black;
+    --acento: #18a27d;
+    --acento-2: #0f7b60;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: var(--texto);
+    background: var(--fondo);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
